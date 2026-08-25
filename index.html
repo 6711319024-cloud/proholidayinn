@@ -294,6 +294,7 @@ footer{
 <section class="card full" id="contact">
   <div class="icon">📞</div>
   <h3 id="contact-title">CONTACT & SERVICES</h3>
+  <div class="info-row"><span class="label" id="contact-front-label">Front Desk / Assistance</span><span class="value" id="contact-front-val">Dial 0</span></div>
   <div class="info-row"><span class="label" id="contact-room-label">Room Service</span><span class="value" id="contact-room-val">Dial 5</span></div>
 </section>
 
@@ -400,6 +401,8 @@ const translations = {
     facFitTitle: "Fitness Center",
     facFitVal: "24 Hours",
     contactTitle: "CONTACT & SERVICES",
+    contactFrontLabel: "Front Desk / Assistance",
+    contactFrontVal: "Dial 0",
     contactRoomLabel: "Room Service",
     contactRoomVal: "Dial 5",
     mapTitle: "RESORT AREA MAP",
@@ -473,6 +476,8 @@ const translations = {
     facFitTitle: "健身中心",
     facFitVal: "24 小时开放",
     contactTitle: "联系与客房服务",
+    contactFrontLabel: "前台 / 咨询协助",
+    contactFrontVal: "请拨打 0",
     contactRoomLabel: "客房服务 (Room Service)",
     contactRoomVal: "请拨打 5",
     mapTitle: "度假村导览地图",
@@ -546,6 +551,8 @@ const translations = {
     facFitTitle: "مركز اللياقة البدنية",
     facFitVal: "24 ساعة",
     contactTitle: "الاتصال وخدمة الغرف",
+    contactFrontLabel: "الاستقبال / أي استفسار آخر",
+    contactFrontVal: "اتصل بـ 0",
     contactRoomLabel: "خدمة الغرف",
     contactRoomVal: "اتصل بـ 5",
     mapTitle: "خريطة المنتجع",
@@ -640,6 +647,8 @@ function setLanguage(lang, btnElement) {
   document.getElementById('fac-fit-val').innerText = t.facFitVal;
 
   document.getElementById('contact-title').innerText = t.contactTitle;
+  document.getElementById('contact-front-label').innerText = t.contactFrontLabel;
+  document.getElementById('contact-front-val').innerText = t.contactFrontVal;
   document.getElementById('contact-room-label').innerText = t.contactRoomLabel;
   document.getElementById('contact-room-val').innerText = t.contactRoomVal;
 
